@@ -20,6 +20,7 @@ and navigate to books to borrow.
 
 ### User Stories
 - As a user I want to be able to "donate" (add) books to the library and make them available to borrow.
+- As a user I want to be ablet to register and have an account to hold my borrowed books and be able to access them.
 - As a user I want to be able to list all the books in the library and an option to display only available books 
 (not including already borrowed books).
 - As a user I want to be able to select a book from the library, check its status, and borrow it if it is available.
