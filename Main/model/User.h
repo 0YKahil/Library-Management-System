@@ -4,6 +4,7 @@ Author: Youssef Kahil
 */
 #include <string>
 #include <list>
+#include "Book.h"
 using namespace std;
 
 class User {
@@ -11,10 +12,10 @@ class User {
     public:
     // Constructs a user given next id 
     // needing a name, password, and empty datablock
-    User(string name, string password);
+    User(string username, string password);
 
     // getters
-    int getID();
+    int getUserID();
     string getName();
     string getPassword();
     list<Book> getBooks();
@@ -24,6 +25,5 @@ class User {
     string username;
     string password;
     list<Book> books;
-
 
 };
