@@ -18,12 +18,12 @@ class User {
     int getUserID();
     string getName();
     string getPassword();
-    list<Book> getBooks();
+    unordered_map<int, Book> getBooks();
 
     private:
-    int userID = 0;
-    string username;
-    string password;
-    list<Book> books;
+    int userID_ = 0;
+    string username_;
+    string password_;
+    unordered_map<int, Book> books_;
 
 };

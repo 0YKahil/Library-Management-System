@@ -7,30 +7,55 @@ Author: Youssef Kahil
 #include <string>
 #include "Book.h"
 
-Book::Book(string bookName, string author, Genre genre) {
-    this->bookID++;
-    this->bookName = bookName;
-    this->author = author;
-    this->genre = genre;
-    this->borrowed = false;
+Book::Book(string name, string author, Genre genre) {
+    bookID_++;
+    bookName_ = name;
+    author_ = author;
+    genre_ = genre;
+    borrowed_ = false;
 }
 
 int Book::getBookID() {
-    return this->bookID;
+    return bookID_;
 }
 
 string Book::getBookName() {
-    return this->bookName;
+    return bookName_;
 }
 
 string Book::getAuthor() {
-    return this->author;
+    return author_;
 }
 
 Genre Book::getGenre() {
-    return this->genre;
+    return genre_;
 }
 
 bool Book::getBorrowed() {
-    return this->borrowed;
+    return borrowed_;
 }
+
+void Book::setBorrowed() {
+    if (borrowed_ != true){
+        borrowed_ = true;
+    }   
+}
+
+void Book::setAvailable() {
+    if (borrowed_ != false){
+        borrowed_ = false;
+    }   
+}
+
+void Book::setBookName(string name) {
+    bookName_ = name;
+}
+
+void Book::setBookAuthor(string author) {
+    author_ = author;
+}
+
+void Book::setBookGenre(Genre genre) {
+    genre_ = genre;
+}
+

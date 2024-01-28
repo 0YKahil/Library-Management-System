@@ -7,26 +7,27 @@ Author: Youssef Kahil
 
 #include "User.h"
 #include <string>
+#include <unordered_map>
 
 User::User(string username, string password) {
-    this->userID++;
-    this->username = username;
-    this->password = password;
-    this->books = {};
+    userID_++;
+    username_ = username;
+    password_ = password;
+    books_ = {};
 }
 
 int User::getUserID() {
-    return this->userID;
+    return userID_;
 }
 
 string User::getName() {
-    return this->username;
+    return username_;
 }
 
 string User::getPassword() {
-    return this->password;
+    return password_;
 }
 
-list<Book> User::getBooks() {
-    return this->books;
+unordered_map<int, Book> User::getBooks() {
+    return books_;
 }
