@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/ykahil/projects/Library-Registration-System
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lrs.dir/all
+all: CMakeFiles/lrsTest.dir/all
+all: CMakeFiles/LRS.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lrs.dir/clean
+clean: CMakeFiles/lrsTest.dir/clean
+clean: CMakeFiles/LRS.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lrs.dir
+# Target rules for target CMakeFiles/lrsTest.dir
 
 # All Build rule for target.
-CMakeFiles/lrs.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=1,2,3 "Built target lrs"
-.PHONY : CMakeFiles/lrs.dir/all
+CMakeFiles/lrsTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=4,5,6,7 "Built target lrsTest"
+.PHONY : CMakeFiles/lrsTest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lrs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/Library-Registration-System/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lrs.dir/all
+CMakeFiles/lrsTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/Library-Registration-System/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lrsTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/Library-Registration-System/CMakeFiles 0
-.PHONY : CMakeFiles/lrs.dir/rule
+.PHONY : CMakeFiles/lrsTest.dir/rule
 
 # Convenience name for target.
-lrs: CMakeFiles/lrs.dir/rule
-.PHONY : lrs
+lrsTest: CMakeFiles/lrsTest.dir/rule
+.PHONY : lrsTest
 
 # clean rule for target.
-CMakeFiles/lrs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/clean
-.PHONY : CMakeFiles/lrs.dir/clean
+CMakeFiles/lrsTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/clean
+.PHONY : CMakeFiles/lrsTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LRS.dir
+
+# All Build rule for target.
+CMakeFiles/LRS.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=1,2,3 "Built target LRS"
+.PHONY : CMakeFiles/LRS.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LRS.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/Library-Registration-System/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LRS.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/Library-Registration-System/CMakeFiles 0
+.PHONY : CMakeFiles/LRS.dir/rule
+
+# Convenience name for target.
+LRS: CMakeFiles/LRS.dir/rule
+.PHONY : LRS
+
+# clean rule for target.
+CMakeFiles/LRS.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/clean
+.PHONY : CMakeFiles/LRS.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

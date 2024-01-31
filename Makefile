@@ -117,24 +117,38 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lrs
+# Target rules for targets named lrsTest
 
 # Build rule for target.
-lrs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lrs
-.PHONY : lrs
+lrsTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lrsTest
+.PHONY : lrsTest
 
 # fast build rule for target.
-lrs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/build
-.PHONY : lrs/fast
+lrsTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/build
+.PHONY : lrsTest/fast
+
+#=============================================================================
+# Target rules for targets named LRS
+
+# Build rule for target.
+LRS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LRS
+.PHONY : LRS
+
+# fast build rule for target.
+LRS/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/build
+.PHONY : LRS/fast
 
 src/Book.o: src/Book.cpp.o
 .PHONY : src/Book.o
 
 # target to build an object file
 src/Book.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/src/Book.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/Book.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/Book.cpp.o
 .PHONY : src/Book.cpp.o
 
 src/Book.i: src/Book.cpp.i
@@ -142,7 +156,8 @@ src/Book.i: src/Book.cpp.i
 
 # target to preprocess a source file
 src/Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/src/Book.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/Book.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/Book.cpp.i
 .PHONY : src/Book.cpp.i
 
 src/Book.s: src/Book.cpp.s
@@ -150,15 +165,40 @@ src/Book.s: src/Book.cpp.s
 
 # target to generate assembly for a file
 src/Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/src/Book.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/Book.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/Book.cpp.s
 .PHONY : src/Book.cpp.s
+
+src/User.o: src/User.cpp.o
+.PHONY : src/User.o
+
+# target to build an object file
+src/User.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/User.cpp.o
+.PHONY : src/User.cpp.o
+
+src/User.i: src/User.cpp.i
+.PHONY : src/User.i
+
+# target to preprocess a source file
+src/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/User.cpp.i
+.PHONY : src/User.cpp.i
+
+src/User.s: src/User.cpp.s
+.PHONY : src/User.s
+
+# target to generate assembly for a file
+src/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/User.cpp.s
+.PHONY : src/User.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -166,7 +206,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,8 +214,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrs.dir/build.make CMakeFiles/lrs.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+tests/UserTest.o: tests/UserTest.cpp.o
+.PHONY : tests/UserTest.o
+
+# target to build an object file
+tests/UserTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o
+.PHONY : tests/UserTest.cpp.o
+
+tests/UserTest.i: tests/UserTest.cpp.i
+.PHONY : tests/UserTest.i
+
+# target to preprocess a source file
+tests/UserTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/tests/UserTest.cpp.i
+.PHONY : tests/UserTest.cpp.i
+
+tests/UserTest.s: tests/UserTest.cpp.s
+.PHONY : tests/UserTest.s
+
+# target to generate assembly for a file
+tests/UserTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/tests/UserTest.cpp.s
+.PHONY : tests/UserTest.cpp.s
 
 # Help Target
 help:
@@ -185,13 +249,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lrs"
+	@echo "... LRS"
+	@echo "... lrsTest"
 	@echo "... src/Book.o"
 	@echo "... src/Book.i"
 	@echo "... src/Book.s"
+	@echo "... src/User.o"
+	@echo "... src/User.i"
+	@echo "... src/User.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/UserTest.o"
+	@echo "... tests/UserTest.i"
+	@echo "... tests/UserTest.s"
 .PHONY : help
 
 

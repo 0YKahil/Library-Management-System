@@ -1,7 +1,7 @@
 CMakeFiles/lrs.dir/src/Book.cpp.o: \
  /home/ykahil/projects/Library-Registration-System/src/Book.cpp \
  /usr/include/stdc-predef.h \
- /home/ykahil/projects/Library-Registration-System/./include/Book.h \
+ /home/ykahil/projects/Library-Registration-System/src/../include/Book.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

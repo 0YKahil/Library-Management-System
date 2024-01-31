@@ -6,22 +6,40 @@
 
 using namespace std;
 
+enum Genre {
+        HORROR, FANTASY, SCI_FI, NON_FICTION, MYSTERY, ROMANCE, OTHER
+    };
+
+
 class Book {
     public:
-    /*
-    Constructs a new Book object with a given name, author, genre, and automatically assigns
-    the next id to it
-    */
-    Book(string name, string author, string genre);
+        /*
+        Constructs a new Book object with a given name, author, genre, automatically assigns
+        the next available id to it (book ids begin at 1000), and sets its borrowed status to false
+        */
+        Book(string name, string author, Genre genre);
 
-    // getters
-    string getBookName();
-    string getBookAuthor();
-    string getBookGenre();
-
+        // getters
+        int getBookID();
+        bool getBorrowed();
+        string getBookName();
+        string getBookAuthor();
+        Genre getBookGenre();
+        
+        // setters
+        void setBorrowed();
+        void setAvailable();
+        void setBookName(string name);
+        void setBookAuthor(string author);
+        void setBookGenre(Genre genre);
+    
 
     private:
-    string name_;
-    string author_;
-    string genre_;
+        static int currentBookID_;
+        int bookID_;
+        bool borrowed_;
+        string name_;
+        string author_;
+        Genre genre_;
+
 };

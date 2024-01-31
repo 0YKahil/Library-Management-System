@@ -43,5 +43,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lrs.dir/DependInfo.cmake"
+  "CMakeFiles/lrsTest.dir/DependInfo.cmake"
+  "CMakeFiles/LRS.dir/DependInfo.cmake"
   )

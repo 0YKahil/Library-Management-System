@@ -1,12 +1,30 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-project(library-registration-system)
-set(my_includes "./include/Book.h")
-set(my_cpps "./src/main.cpp" "./src/Book.cpp")
+project(library-management-system)
 
-add_executable(lrs ${my_includes} ${my_cpps})
+set(headers     
+    "./include/Book.h"
+    "./include/User.h"
+    "./tests/catch.hpp"
+)
+set(sources 
+    "./src/main.cpp" 
+    "./src/Book.cpp"
+)
 
-include_directories("./include")
+set(tests
+    "./tests/BookTest.cpp"
+    "./tests/UserTest.cpp"
+    "./src/User.cpp"
+    "./src/Book.cpp"
+)
+
+add_executable(lrsTest ${tests}) 
+add_executable(LRS ${headers} ${sources})
+
+
+
+
 
 
 

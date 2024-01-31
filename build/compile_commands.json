@@ -1,12 +1,32 @@
 [
 {
   "directory": "/home/ykahil/projects/Library-Registration-System/build",
-  "command": "/usr/bin/g++ -I/home/ykahil/projects/Library-Registration-System/./include -g -o CMakeFiles/lrs.dir/src/main.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/main.cpp",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o -c /home/ykahil/projects/Library-Registration-System/tests/BookTest.cpp",
+  "file": "/home/ykahil/projects/Library-Registration-System/tests/BookTest.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/Library-Registration-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o -c /home/ykahil/projects/Library-Registration-System/tests/UserTest.cpp",
+  "file": "/home/ykahil/projects/Library-Registration-System/tests/UserTest.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/Library-Registration-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/lrsTest.dir/src/User.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/User.cpp",
+  "file": "/home/ykahil/projects/Library-Registration-System/src/User.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/Library-Registration-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/lrsTest.dir/src/Book.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/Book.cpp",
+  "file": "/home/ykahil/projects/Library-Registration-System/src/Book.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/Library-Registration-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/LRS.dir/src/main.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/main.cpp",
   "file": "/home/ykahil/projects/Library-Registration-System/src/main.cpp"
 },
 {
   "directory": "/home/ykahil/projects/Library-Registration-System/build",
-  "command": "/usr/bin/g++ -I/home/ykahil/projects/Library-Registration-System/./include -g -o CMakeFiles/lrs.dir/src/Book.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/Book.cpp",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/LRS.dir/src/Book.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/Book.cpp",
   "file": "/home/ykahil/projects/Library-Registration-System/src/Book.cpp"
 }
 ]

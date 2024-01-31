@@ -1,4 +1,5 @@
-/home/ykahil/projects/Library-Registration-System/build/CMakeFiles/lrs.dir
+/home/ykahil/projects/Library-Registration-System/build/CMakeFiles/lrsTest.dir
+/home/ykahil/projects/Library-Registration-System/build/CMakeFiles/LRS.dir
 /home/ykahil/projects/Library-Registration-System/build/CMakeFiles/package.dir
 /home/ykahil/projects/Library-Registration-System/build/CMakeFiles/package_source.dir
 /home/ykahil/projects/Library-Registration-System/build/CMakeFiles/edit_cache.dir

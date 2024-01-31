@@ -10,8 +10,9 @@
     The library will also separate the books by genre allowing duplicate books with different ID. 
     *The application will not connect to a library or any website and books will manually have to be added 
     or generated using the Book class*.
-  - There will be an account and registration system locally stored with persistence so the user is able to keep their data and state
-    of the application.
+  - There will be an account and registration system locally stored with persistence so the user is able to keep their data and state of the application.
+  - Admin accounts will have capabilities to revoke books and delete users as needed
+    
 
 
 - The application is meant for anyone who enjoys reading or wants to access a library with books to borrow or return. 

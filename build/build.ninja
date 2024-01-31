@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: library-registration-system
+# Project: library-management-system
 # Configurations: Debug
 # =============================================================================
 
@@ -41,44 +41,92 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/ykahil/projects/Library-Registration-System/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target lrs
+# Object build statements for EXECUTABLE target lrsTest
 
 
 #############################################
-# Order-only phony target for lrs
+# Order-only phony target for lrsTest
 
-build cmake_object_order_depends_target_lrs: phony || CMakeFiles/lrs.dir
+build cmake_object_order_depends_target_lrsTest: phony || CMakeFiles/lrsTest.dir
 
-build CMakeFiles/lrs.dir/src/main.cpp.o: CXX_COMPILER__lrs_Debug /home/ykahil/projects/Library-Registration-System/src/main.cpp || cmake_object_order_depends_target_lrs
-  DEP_FILE = CMakeFiles/lrs.dir/src/main.cpp.o.d
+build CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o: CXX_COMPILER__lrsTest_Debug /home/ykahil/projects/Library-Registration-System/tests/BookTest.cpp || cmake_object_order_depends_target_lrsTest
+  DEP_FILE = CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/ykahil/projects/Library-Registration-System/./include
-  OBJECT_DIR = CMakeFiles/lrs.dir
-  OBJECT_FILE_DIR = CMakeFiles/lrs.dir/src
+  OBJECT_DIR = CMakeFiles/lrsTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/lrsTest.dir/tests
 
-build CMakeFiles/lrs.dir/src/Book.cpp.o: CXX_COMPILER__lrs_Debug /home/ykahil/projects/Library-Registration-System/src/Book.cpp || cmake_object_order_depends_target_lrs
-  DEP_FILE = CMakeFiles/lrs.dir/src/Book.cpp.o.d
+build CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o: CXX_COMPILER__lrsTest_Debug /home/ykahil/projects/Library-Registration-System/tests/UserTest.cpp || cmake_object_order_depends_target_lrsTest
+  DEP_FILE = CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/ykahil/projects/Library-Registration-System/./include
-  OBJECT_DIR = CMakeFiles/lrs.dir
-  OBJECT_FILE_DIR = CMakeFiles/lrs.dir/src
+  OBJECT_DIR = CMakeFiles/lrsTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/lrsTest.dir/tests
+
+build CMakeFiles/lrsTest.dir/src/User.cpp.o: CXX_COMPILER__lrsTest_Debug /home/ykahil/projects/Library-Registration-System/src/User.cpp || cmake_object_order_depends_target_lrsTest
+  DEP_FILE = CMakeFiles/lrsTest.dir/src/User.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/lrsTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/lrsTest.dir/src
+
+build CMakeFiles/lrsTest.dir/src/Book.cpp.o: CXX_COMPILER__lrsTest_Debug /home/ykahil/projects/Library-Registration-System/src/Book.cpp || cmake_object_order_depends_target_lrsTest
+  DEP_FILE = CMakeFiles/lrsTest.dir/src/Book.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/lrsTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/lrsTest.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target lrs
+# Link build statements for EXECUTABLE target lrsTest
 
 
 #############################################
-# Link the executable lrs
+# Link the executable lrsTest
 
-build lrs: CXX_EXECUTABLE_LINKER__lrs_Debug CMakeFiles/lrs.dir/src/main.cpp.o CMakeFiles/lrs.dir/src/Book.cpp.o
+build lrsTest: CXX_EXECUTABLE_LINKER__lrsTest_Debug CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o CMakeFiles/lrsTest.dir/src/User.cpp.o CMakeFiles/lrsTest.dir/src/Book.cpp.o
   FLAGS = -g
   LINK_FLAGS = -rdynamic
-  OBJECT_DIR = CMakeFiles/lrs.dir
+  OBJECT_DIR = CMakeFiles/lrsTest.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = lrs
-  TARGET_PDB = lrs.dbg
+  TARGET_FILE = lrsTest
+  TARGET_PDB = lrsTest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LRS
+
+
+#############################################
+# Order-only phony target for LRS
+
+build cmake_object_order_depends_target_LRS: phony || CMakeFiles/LRS.dir
+
+build CMakeFiles/LRS.dir/src/main.cpp.o: CXX_COMPILER__LRS_Debug /home/ykahil/projects/Library-Registration-System/src/main.cpp || cmake_object_order_depends_target_LRS
+  DEP_FILE = CMakeFiles/LRS.dir/src/main.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/LRS.dir
+  OBJECT_FILE_DIR = CMakeFiles/LRS.dir/src
+
+build CMakeFiles/LRS.dir/src/Book.cpp.o: CXX_COMPILER__LRS_Debug /home/ykahil/projects/Library-Registration-System/src/Book.cpp || cmake_object_order_depends_target_LRS
+  DEP_FILE = CMakeFiles/LRS.dir/src/Book.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/LRS.dir
+  OBJECT_FILE_DIR = CMakeFiles/LRS.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LRS
+
+
+#############################################
+# Link the executable LRS
+
+build LRS: CXX_EXECUTABLE_LINKER__LRS_Debug CMakeFiles/LRS.dir/src/main.cpp.o CMakeFiles/LRS.dir/src/Book.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = CMakeFiles/LRS.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = LRS
+  TARGET_PDB = LRS.dbg
 
 
 #############################################
@@ -138,7 +186,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/ykahil/projects/Library-Registration-System/build
 
-build all: phony lrs
+build all: phony lrsTest LRS
 
 # =============================================================================
 # Unknown Build Time Dependencies.
