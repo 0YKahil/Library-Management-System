@@ -1,6 +1,6 @@
 # Personal Project
 
-## Library Registration System
+## Library Management System
 
 **Description**:
 - The application will act as a library's system which can keep track of books from a 
