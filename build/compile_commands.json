@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ykahil/projects/Library-Registration-System/build",
+  "command": "/usr/bin/g++ -I/home/ykahil/projects/Library-Registration-System/./include -g -o CMakeFiles/lrs.dir/src/main.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/main.cpp",
+  "file": "/home/ykahil/projects/Library-Registration-System/src/main.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/Library-Registration-System/build",
+  "command": "/usr/bin/g++ -I/home/ykahil/projects/Library-Registration-System/./include -g -o CMakeFiles/lrs.dir/src/Book.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/Book.cpp",
+  "file": "/home/ykahil/projects/Library-Registration-System/src/Book.cpp"
+}
+]

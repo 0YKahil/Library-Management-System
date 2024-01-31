@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/library-registration-system.dir/src/main.cpp.o CMakeFiles/library-registration-system.dir/src/Book.cpp.o -o library-registration-system 
