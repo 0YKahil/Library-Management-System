@@ -25,11 +25,11 @@ class User {
         // returns a map of the books currently borrowed by this user, or empty map
         unordered_map<int, Book> getBooks();
 
-        // /*
-        // EFFECTS: returns the names of the books on this account and their authors 
-        // in the format "BookName | BookAuthor" as a vector of type string
-        // */
-        // vector<string> getNamesAndAuthors();
+        /*
+        EFFECTS: returns the names of the books on this account and their authors 
+        in the format "BookName | BookAuthor" as a vector of type string
+        */
+        vector<string> getNamesAndAuthors();
 
         /*
         MODIFIES: this

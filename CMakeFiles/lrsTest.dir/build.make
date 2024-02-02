@@ -69,10 +69,24 @@ include CMakeFiles/lrsTest.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lrsTest.dir/flags.make
 
+CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o: CMakeFiles/lrsTest.dir/flags.make
+CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o: tests/BookTest.cpp
+CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o: CMakeFiles/lrsTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o -MF CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o.d -o CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o -c /home/ykahil/projects/Library-Registration-System/tests/BookTest.cpp
+
+CMakeFiles/lrsTest.dir/tests/BookTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lrsTest.dir/tests/BookTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Registration-System/tests/BookTest.cpp > CMakeFiles/lrsTest.dir/tests/BookTest.cpp.i
+
+CMakeFiles/lrsTest.dir/tests/BookTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lrsTest.dir/tests/BookTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Registration-System/tests/BookTest.cpp -o CMakeFiles/lrsTest.dir/tests/BookTest.cpp.s
+
 CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o: CMakeFiles/lrsTest.dir/flags.make
 CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o: tests/UserTest.cpp
 CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o: CMakeFiles/lrsTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o -MF CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o.d -o CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o -c /home/ykahil/projects/Library-Registration-System/tests/UserTest.cpp
 
 CMakeFiles/lrsTest.dir/tests/UserTest.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/lrsTest.dir/tests/UserTest.cpp.s: cmake_force
 CMakeFiles/lrsTest.dir/src/User.cpp.o: CMakeFiles/lrsTest.dir/flags.make
 CMakeFiles/lrsTest.dir/src/User.cpp.o: src/User.cpp
 CMakeFiles/lrsTest.dir/src/User.cpp.o: CMakeFiles/lrsTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lrsTest.dir/src/User.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lrsTest.dir/src/User.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lrsTest.dir/src/User.cpp.o -MF CMakeFiles/lrsTest.dir/src/User.cpp.o.d -o CMakeFiles/lrsTest.dir/src/User.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/User.cpp
 
 CMakeFiles/lrsTest.dir/src/User.cpp.i: cmake_force
@@ -97,32 +111,18 @@ CMakeFiles/lrsTest.dir/src/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lrsTest.dir/src/User.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Registration-System/src/User.cpp -o CMakeFiles/lrsTest.dir/src/User.cpp.s
 
-CMakeFiles/lrsTest.dir/src/Book.cpp.o: CMakeFiles/lrsTest.dir/flags.make
-CMakeFiles/lrsTest.dir/src/Book.cpp.o: src/Book.cpp
-CMakeFiles/lrsTest.dir/src/Book.cpp.o: CMakeFiles/lrsTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lrsTest.dir/src/Book.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lrsTest.dir/src/Book.cpp.o -MF CMakeFiles/lrsTest.dir/src/Book.cpp.o.d -o CMakeFiles/lrsTest.dir/src/Book.cpp.o -c /home/ykahil/projects/Library-Registration-System/src/Book.cpp
-
-CMakeFiles/lrsTest.dir/src/Book.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lrsTest.dir/src/Book.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Registration-System/src/Book.cpp > CMakeFiles/lrsTest.dir/src/Book.cpp.i
-
-CMakeFiles/lrsTest.dir/src/Book.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lrsTest.dir/src/Book.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Registration-System/src/Book.cpp -o CMakeFiles/lrsTest.dir/src/Book.cpp.s
-
 # Object files for target lrsTest
 lrsTest_OBJECTS = \
+"CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o" \
 "CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o" \
-"CMakeFiles/lrsTest.dir/src/User.cpp.o" \
-"CMakeFiles/lrsTest.dir/src/Book.cpp.o"
+"CMakeFiles/lrsTest.dir/src/User.cpp.o"
 
 # External object files for target lrsTest
 lrsTest_EXTERNAL_OBJECTS =
 
+lrsTest: CMakeFiles/lrsTest.dir/tests/BookTest.cpp.o
 lrsTest: CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o
 lrsTest: CMakeFiles/lrsTest.dir/src/User.cpp.o
-lrsTest: CMakeFiles/lrsTest.dir/src/Book.cpp.o
 lrsTest: CMakeFiles/lrsTest.dir/build.make
 lrsTest: CMakeFiles/lrsTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ykahil/projects/Library-Registration-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lrsTest"

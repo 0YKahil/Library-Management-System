@@ -33,16 +33,20 @@ unordered_map<int, Book> User::getBooks() {
     return books_;
 }
 
-// vector<string> User::getNamesAndAuthors() {
-//     vector<string> names = {};
-//     for(auto it = books_.begin(); it != books_.end(); ++it) {
-//         names.push_back(it->second.getBookName() + " | " + it->second.getBookAuthor());
-//     }
-//     return names;
-// }
+vector<string> User::getNamesAndAuthors() {
+    vector<string> names = {};
+    for(auto it = books_.begin(); it != books_.end(); ++it) {
+        names.push_back(it->second.getNameAndAuthor());
+    }
+    return names;
+}
 
 void User::addBook(Book book) {
-    books_.insert({book.getBookID(), book});
+    if (!book.getBorrowed()) {
+        books_.insert({book.getBookID(), book});
+        book.setBorrowed();
+    }
+    
 }
 
 void User::removeBook(Book book) {

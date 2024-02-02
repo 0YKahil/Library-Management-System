@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lrsTest
+# Target rules for targets named userTest
 
 # Build rule for target.
-lrsTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lrsTest
-.PHONY : lrsTest
+userTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 userTest
+.PHONY : userTest
 
 # fast build rule for target.
-lrsTest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/build
-.PHONY : lrsTest/fast
+userTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/build
+.PHONY : userTest/fast
 
 #=============================================================================
 # Target rules for targets named LRS
@@ -147,7 +147,7 @@ src/Book.o: src/Book.cpp.o
 
 # target to build an object file
 src/Book.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/Book.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/src/Book.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/Book.cpp.o
 .PHONY : src/Book.cpp.o
 
@@ -156,7 +156,7 @@ src/Book.i: src/Book.cpp.i
 
 # target to preprocess a source file
 src/Book.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/Book.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/src/Book.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/Book.cpp.i
 .PHONY : src/Book.cpp.i
 
@@ -165,7 +165,7 @@ src/Book.s: src/Book.cpp.s
 
 # target to generate assembly for a file
 src/Book.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/Book.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/src/Book.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRS.dir/build.make CMakeFiles/LRS.dir/src/Book.cpp.s
 .PHONY : src/Book.cpp.s
 
@@ -174,7 +174,7 @@ src/User.o: src/User.cpp.o
 
 # target to build an object file
 src/User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/User.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/src/User.cpp.o
 .PHONY : src/User.cpp.o
 
 src/User.i: src/User.cpp.i
@@ -182,7 +182,7 @@ src/User.i: src/User.cpp.i
 
 # target to preprocess a source file
 src/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/User.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/src/User.cpp.i
 .PHONY : src/User.cpp.i
 
 src/User.s: src/User.cpp.s
@@ -190,7 +190,7 @@ src/User.s: src/User.cpp.s
 
 # target to generate assembly for a file
 src/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/src/User.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/src/User.cpp.s
 .PHONY : src/User.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -222,7 +222,7 @@ tests/UserTest.o: tests/UserTest.cpp.o
 
 # target to build an object file
 tests/UserTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/tests/UserTest.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/tests/UserTest.cpp.o
 .PHONY : tests/UserTest.cpp.o
 
 tests/UserTest.i: tests/UserTest.cpp.i
@@ -230,7 +230,7 @@ tests/UserTest.i: tests/UserTest.cpp.i
 
 # target to preprocess a source file
 tests/UserTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/tests/UserTest.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/tests/UserTest.cpp.i
 .PHONY : tests/UserTest.cpp.i
 
 tests/UserTest.s: tests/UserTest.cpp.s
@@ -238,7 +238,7 @@ tests/UserTest.s: tests/UserTest.cpp.s
 
 # target to generate assembly for a file
 tests/UserTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lrsTest.dir/build.make CMakeFiles/lrsTest.dir/tests/UserTest.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/tests/UserTest.cpp.s
 .PHONY : tests/UserTest.cpp.s
 
 # Help Target
@@ -250,7 +250,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LRS"
-	@echo "... lrsTest"
+	@echo "... userTest"
 	@echo "... src/Book.o"
 	@echo "... src/Book.i"
 	@echo "... src/Book.s"

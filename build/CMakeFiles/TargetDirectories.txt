@@ -1,4 +1,4 @@
-/home/ykahil/projects/Library-Registration-System/build/CMakeFiles/lrsTest.dir
+/home/ykahil/projects/Library-Registration-System/build/CMakeFiles/libTest.dir
 /home/ykahil/projects/Library-Registration-System/build/CMakeFiles/LRS.dir
 /home/ykahil/projects/Library-Registration-System/build/CMakeFiles/package.dir
 /home/ykahil/projects/Library-Registration-System/build/CMakeFiles/package_source.dir

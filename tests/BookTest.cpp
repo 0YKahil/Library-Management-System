@@ -30,9 +30,9 @@ TEST_CASE("Test constructor / getters") {
 
     REQUIRE(b3.getBorrowed() == false);
 
-    REQUIRE(b1.getBookID() == 1001);
-    REQUIRE(b2.getBookID() == 1002);
-    REQUIRE(b3.getBookID() == 1003);
+    REQUIRE(b1.getBookID() == 1);
+    REQUIRE(b2.getBookID() == 2);
+    REQUIRE(b3.getBookID() == 3);
 
     REQUIRE(parseGenre(b1.getBookGenre()) == "HORROR");
     REQUIRE(parseGenre(b2.getBookGenre()) == "FANTASY");

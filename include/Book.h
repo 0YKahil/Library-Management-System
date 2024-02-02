@@ -15,9 +15,14 @@ class Book {
     public:
         /*
         Constructs a new Book object with a given name, author, genre, automatically assigns
-        the next available id to it (book ids begin at 1000), and sets its borrowed status to false
+        the next available id to it (book ids begin at 1), and sets its borrowed status to false
         */
         Book(string name, string author, Genre genre);
+
+        /*
+        Constructs a new book with defaulted empty name and author and genre other
+        */
+        Book();
 
         // getters
         int getBookID();
@@ -25,6 +30,7 @@ class Book {
         string getBookName();
         string getBookAuthor();
         Genre getBookGenre();
+        string getNameAndAuthor();
         
         // setters
         void setBorrowed();

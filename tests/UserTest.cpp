@@ -27,8 +27,8 @@ TEST_CASE("Test addBook / removeBook") {
     REQUIRE(u.getBooks().size() == 0);
     u.addBook(b1);
     REQUIRE(u.getBooks().size() == 1);
-    // REQUIRE(u.getBooks()[b1.getBookID()].getBookName() == "book1");
-
+    REQUIRE( "book1" == "book1" );
+    REQUIRE(u.getBooks()[b1.getBookID()].getBookName() == "book1");
     u.removeBook(b1);
     REQUIRE(u.getBooks().size() == 0);
 }
@@ -37,10 +37,11 @@ TEST_CASE("Test addBook / removeBook MULTIPLE") {
     u.addBook(b1);
     u.addBook(b2);
     u.addBook(b3);
+    u.addBook(b1);
     REQUIRE(u.getBooks().size() == 3);
-    // REQUIRE(u.getBooks()[b1.getBookID()].getBookName() == "book1");
-    // REQUIRE(u.getBooks()[b2.getBookID()].getBookName() == "book2");
-    // REQUIRE(u.getBooks()[b3.getBookID()].getBookName() == "book3");
+    REQUIRE(u.getBooks()[b1.getBookID()].getBookName() == "book1");
+    REQUIRE(u.getBooks()[b2.getBookID()].getBookName() == "book2");
+    REQUIRE(u.getBooks()[b3.getBookID()].getBookName() == "book3");
 
     u.removeBook(b1);
     u.removeBook(b2);
@@ -49,22 +50,30 @@ TEST_CASE("Test addBook / removeBook MULTIPLE") {
     REQUIRE(u.getBooks().size() == 0);
 }
 
-// TEST_CASE("Test getNamesAndAuthors") {
-//     REQUIRE(u.getNamesAndAuthors().size() == 0);
-//     u.addBook(b1);
-//     REQUIRE(u.getNamesAndAuthors().size() == 1);
-//     REQUIRE(u.getNamesAndAuthors()[0] == "name1 | author1");
-// }
+TEST_CASE("Test getNamesAndAuthors") {
+    REQUIRE(u.getNamesAndAuthors().size() == 0);
+    u.addBook(b1);
+    REQUIRE(u.getNamesAndAuthors().size() == 1);
+    REQUIRE(u.getNamesAndAuthors()[0] == "book1 | author1");
+    u.removeBook(b1);
+    REQUIRE(u.getNamesAndAuthors().size() == 0);
+}
 
-// TEST_CASE("Test getNamesAndAuthors MULTIPLE") {
-//     REQUIRE(u.getNamesAndAuthors().size() == 0);
-//     u.addBook(b1);
-//     u.addBook(b2);
-//     u.addBook(b3);
-//     REQUIRE(u.getNamesAndAuthors()[0] == "name1 | author1");
-//     REQUIRE(u.getNamesAndAuthors()[1] == "name2 | author2");
-//     REQUIRE(u.getNamesAndAuthors()[2] == "name3 | author3");
-// }
+TEST_CASE("Test getNamesAndAuthors MULTIPLE") {
+    u.removeBook(b1);
+    cout << u.getBooks().size() << "< here" << endl;
+    REQUIRE(u.getBooks().size() == 0);
+    REQUIRE(u.getNamesAndAuthors().size() == 0);
+    u.addBook(b1);
+    u.addBook(b2);
+    u.addBook(b3);
+    for (int i = 0; i < u.getNamesAndAuthors().size(); i++) {
+        cout << u.getNamesAndAuthors()[i] << "< here" << endl;
+    }
+    REQUIRE(u.getNamesAndAuthors()[2] == "1| book1 | author1");
+    REQUIRE(u.getNamesAndAuthors()[1] == "2| book2 | author2");
+    REQUIRE(u.getNamesAndAuthors()[0] == "3| book3 | author3");
+}
 
 
 
