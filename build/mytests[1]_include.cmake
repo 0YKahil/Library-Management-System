@@ -1,5 +1,0 @@
-if(EXISTS "/home/ykahil/projects/Library-Registration-System/build/mytests[1]_tests.cmake")
-  include("/home/ykahil/projects/Library-Registration-System/build/mytests[1]_tests.cmake")
-else()
-  add_test(mytests_NOT_BUILT mytests_NOT_BUILT)
-endif()

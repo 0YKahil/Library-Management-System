@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/lrs.dir/src/main.cpp.o CMakeFiles/lrs.dir/src/Book.cpp.o -o lrs 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o CMakeFiles/libTest.dir/src/Library.cpp.o CMakeFiles/libTest.dir/src/Book.cpp.o CMakeFiles/libTest.dir/src/User.cpp.o -o libTest 

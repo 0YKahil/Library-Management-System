@@ -9,6 +9,9 @@ Author: Youssef Kahil
 
 // initialize userID with 0
 int User::currentUserID_ = 0;
+User::User() {
+    userID_ = 
+}
 
 User::User(string username, string password) {
     userID_ = currentUserID_++;

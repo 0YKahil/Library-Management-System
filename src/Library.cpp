@@ -83,15 +83,10 @@ unordered_map<int, User> Library::getUsers() {
 }
 
 Book Library::getBookByID(int id) {
-    if (libBooks_.find(id) != libBooks_.end()) {
-        return libBooks_[id];
-    }
-    
+    return libBooks_[id];
 }
 
 User Library::getUserByID(int id) {
-    if (userAccounts_.find(id) != userAccounts_.end()) {
-        return userAccounts_[id];
-    }
+    return userAccounts_[id];
 }
 

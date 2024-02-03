@@ -1,13 +1,6 @@
 # ninja log v5
+0	216	1706991100312122541	CMakeFiles/libTest.dir/src/Book.cpp.o	6f423269fcebd56c
+1	222	1706991100312122541	CMakeFiles/LRS.dir/src/Book.cpp.o	b983af6e42f34f06
+0	467	1706991100562122528	CMakeFiles/LRS.dir/src/main.cpp.o	2664bd56cc420a8d
+0	481	1706991100572122528	CMakeFiles/libTest.dir/src/User.cpp.o	7ddf52ac08c337c2
 0	2	0	clean	a31eedcededa8236
-1	310	1706826180945611710	CMakeFiles/userTest.dir/src/Book.cpp.o	fb991d713ce4b1af
-0	6	1706697733559184894	CMakeFiles/tests.dir/tests/Tests.cpp.o	87858a33432580e3
-1	311	1706826180935611714	CMakeFiles/LRS.dir/src/main.cpp.o	ff04a4023284e1c3
-2	311	1706826180945611710	CMakeFiles/LRS.dir/src/Book.cpp.o	c48b1c6f9b91f095
-0	312	1706826180945611710	CMakeFiles/bookTest.dir/src/Book.cpp.o	602b2eca4f4159d2
-0	10318	1706826190935611148	CMakeFiles/bookTest.dir/tests/BookTest.cpp.o	ab7e3a5e2aca7e9d
-311	545	1706826181175611700	LRS	f6d1a5b8f76f83d4
-1	627	1706826181255611692	CMakeFiles/userTest.dir/src/User.cpp.o	900f233fec67d505
-10319	10840	1706826191475611121	bookTest	ae2a8316da8815
-1	10377	1706826190985611146	CMakeFiles/userTest.dir/tests/UserTest.cpp.o	4ca4bbe5cac91b70
-10377	10904	1706826191535611115	userTest	43d0b9de1e6239f5

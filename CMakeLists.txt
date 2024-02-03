@@ -31,9 +31,9 @@ set(usertests
 )
 
 set(librarytests
+    "./tests/LibraryTest.cpp"
     "./src/Library.cpp"
     "./src/Book.cpp"
-    "./tests/LibraryTest.cpp"
     "./src/User.cpp"
 
 )
