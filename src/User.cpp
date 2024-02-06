@@ -10,7 +10,10 @@ Author: Youssef Kahil
 // initialize userID with 0
 int User::currentUserID_ = 0;
 User::User() {
-    userID_ = 
+    userID_ = currentUserID_++;
+    username_ = "USER_";
+    password_ = "";
+    books_ = {};
 }
 
 User::User(string username, string password) {

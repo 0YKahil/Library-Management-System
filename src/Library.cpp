@@ -12,21 +12,15 @@ Library::Library() {
 }
 
 void Library::addBook(Book book) {
-    if (libBooks_.find(book.getBookID()) != libBooks_.end()) {
-        libBooks_.insert({book.getBookID(), book});
-    }
+    libBooks_.insert({book.getBookID(), book});
 }
 
 void Library::addUser(User user) {
-    if (userAccounts_.find(user.getUserID()) != userAccounts_.end()) {
-        userAccounts_.insert({user.getUserID(), user});
-    }
+    userAccounts_.insert({user.getUserID(), user});
 }
 
 void Library::removeUser(User user) {
-    if (userAccounts_.find(user.getUserID()) != userAccounts_.end()) {
-        libBooks_.erase(user.getUserID());
-    }
+    userAccounts_.erase(user.getUserID());
 }
 
 void Library::removeBook(Book book) {
@@ -74,6 +68,29 @@ vector<string> Library::viewAvailableFilteredBooks(Genre genre) {
     return books;
 }
 
+vector<string> Library::viewBookByName(string name) {
+    vector<string> books = {};
+    string book_name = libBooks_[i].getBookName();
+    for (int i = 0; i < libBooks_.size(); i++) {
+        if (to_upper(book_name) == to_upper(name)) {
+            books.push_back(libBooks_[i].getNameAndAuthor());
+        }
+    }
+    return books;
+}
+
+vector<string> Library::viewBookByAuthor(string author) {
+    vector<string> books = {};
+    for (int i = 0; i < libBooks_.size(); i++) {
+        string author_name = libBooks_[i].getBookAuthor();
+        if (to_upper(author_name) == to_upper(author)) {
+            books.push_back(libBooks_[i].getNameAndAuthor());
+        }
+    }
+    return books;
+}
+
+
 unordered_map<int, Book> Library::getlibBooks() {
     return this->libBooks_;
 }
@@ -82,11 +99,22 @@ unordered_map<int, User> Library::getUsers() {
     return this->userAccounts_;
 }
 
-Book Library::getBookByID(int id) {
-    return libBooks_[id];
+Book* Library::getBookByID(int id) {
+    return &libBooks_[id];
 }
 
-User Library::getUserByID(int id) {
-    return userAccounts_[id];
+User* Library::getUserByID(int id) {
+    return &userAccounts_[id];
 }
 
+vector<User> Library::getUserByName(string name) {
+   // TODO
+   // !!!
+}
+
+
+string to_upper(string &in) {
+  for (int i = 0; i < in.length(); i++)
+    in[i] = in[i] - 'a' + 'A';
+  return in;
+}

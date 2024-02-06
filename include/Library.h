@@ -41,33 +41,47 @@ class Library {
 
         /*
         * EFFECTS: returns all the names of the books in the library with their ids
+        * in the format ID | NAME | AUTHOR
         */
         vector<string> viewAllBooks();
 
         /*
         * EFFECTS: returns all the names of the non borrowed books in the library with their ids 
+        * in the format ID | NAME | AUTHOR
         */
         vector<string> viewAvailableBooks();
 
         /*
         * EFFECTS: returns all the names of the books of the given genre in the library with their ids
+        * in the format ID | NAME | AUTHOR
         */
         vector<string> viewFilteredBooks(Genre genre);
 
         /*
         * EFFECTS: returns all the names of the available books of the given genre in the library with their ids
+        * in the format ID | NAME | AUTHOR
         */
         vector<string> viewAvailableFilteredBooks(Genre genre);
+
+        /*
+        * EFFECTS: returns all the books with the given name in the format ID | NAME| AUTHOR
+        */
+        vector<string> viewBookByName(string name);
+
+        /*
+        * EFFECTS: returns all the books with the given author in the format ID | NAME| AUTHOR
+        */
+        vector<string> viewBookByAuthor(string author);
+
 
         // getters
         unordered_map<int, Book> getlibBooks();
         unordered_map<int, User> getUsers();
-        Book getBookByID(int id);
-        User getUserByID(int id);
+        Book* getBookByID(int id);
+        User* getUserByID(int id);
 
         // TODO: Implement these
         // !!!
-        vector<Book> getBookByName(string name);
         vector<User> getUserByName(string name);
 
     private:

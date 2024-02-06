@@ -12,6 +12,10 @@ using namespace std;
 class User {
     public:
         /*
+        Constructs a new user with an empty name, password, books, and provides next id to it
+        */
+        User();
+        /*
         Constructs a new user with given name, password, empty map of books
         and assigns the next available user id to it
         */

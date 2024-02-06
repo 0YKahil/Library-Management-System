@@ -21,7 +21,7 @@ Book::Book(string name, string author, Genre genre) {
 
 Book::Book() {
     bookID_ = ++currentBookID_;
-    name_ = "";
+    name_ = "BOOK_";
     author_ = "";
     genre_ = OTHER;
 }
