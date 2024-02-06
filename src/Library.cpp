@@ -70,8 +70,9 @@ vector<string> Library::viewAvailableFilteredBooks(Genre genre) {
 
 vector<string> Library::viewBookByName(string name) {
     vector<string> books = {};
-    string book_name = libBooks_[i].getBookName();
+    string book_name = "";
     for (int i = 0; i < libBooks_.size(); i++) {
+        book_name = libBooks_[i].getBookName();
         if (to_upper(book_name) == to_upper(name)) {
             books.push_back(libBooks_[i].getNameAndAuthor());
         }
@@ -81,8 +82,9 @@ vector<string> Library::viewBookByName(string name) {
 
 vector<string> Library::viewBookByAuthor(string author) {
     vector<string> books = {};
+    string author_name = "";
     for (int i = 0; i < libBooks_.size(); i++) {
-        string author_name = libBooks_[i].getBookAuthor();
+        author_name = libBooks_[i].getBookAuthor();
         if (to_upper(author_name) == to_upper(author)) {
             books.push_back(libBooks_[i].getNameAndAuthor());
         }
