@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ykahil/projects/LBM/Library-Management-System
+CMAKE_SOURCE_DIR = /home/ykahil/projects/Library-Management-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ykahil/projects/LBM/Library-Management-System
+CMAKE_BINARY_DIR = /home/ykahil/projects/Library-Management-System
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LRS.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/LRS.dir/flags.make
 CMakeFiles/LRS.dir/src/main.cpp.o: CMakeFiles/LRS.dir/flags.make
 CMakeFiles/LRS.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/LRS.dir/src/main.cpp.o: CMakeFiles/LRS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LRS.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LRS.dir/src/main.cpp.o -MF CMakeFiles/LRS.dir/src/main.cpp.o.d -o CMakeFiles/LRS.dir/src/main.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LRS.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LRS.dir/src/main.cpp.o -MF CMakeFiles/LRS.dir/src/main.cpp.o.d -o CMakeFiles/LRS.dir/src/main.cpp.o -c /home/ykahil/projects/Library-Management-System/src/main.cpp
 
 CMakeFiles/LRS.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LRS.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/LBM/Library-Management-System/src/main.cpp > CMakeFiles/LRS.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Management-System/src/main.cpp > CMakeFiles/LRS.dir/src/main.cpp.i
 
 CMakeFiles/LRS.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LRS.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/LBM/Library-Management-System/src/main.cpp -o CMakeFiles/LRS.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Management-System/src/main.cpp -o CMakeFiles/LRS.dir/src/main.cpp.s
 
 CMakeFiles/LRS.dir/src/Book.cpp.o: CMakeFiles/LRS.dir/flags.make
 CMakeFiles/LRS.dir/src/Book.cpp.o: src/Book.cpp
 CMakeFiles/LRS.dir/src/Book.cpp.o: CMakeFiles/LRS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LRS.dir/src/Book.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LRS.dir/src/Book.cpp.o -MF CMakeFiles/LRS.dir/src/Book.cpp.o.d -o CMakeFiles/LRS.dir/src/Book.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LRS.dir/src/Book.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LRS.dir/src/Book.cpp.o -MF CMakeFiles/LRS.dir/src/Book.cpp.o.d -o CMakeFiles/LRS.dir/src/Book.cpp.o -c /home/ykahil/projects/Library-Management-System/src/Book.cpp
 
 CMakeFiles/LRS.dir/src/Book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LRS.dir/src/Book.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp > CMakeFiles/LRS.dir/src/Book.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Management-System/src/Book.cpp > CMakeFiles/LRS.dir/src/Book.cpp.i
 
 CMakeFiles/LRS.dir/src/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LRS.dir/src/Book.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp -o CMakeFiles/LRS.dir/src/Book.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Management-System/src/Book.cpp -o CMakeFiles/LRS.dir/src/Book.cpp.s
 
 # Object files for target LRS
 LRS_OBJECTS = \
@@ -109,7 +109,7 @@ LRS: CMakeFiles/LRS.dir/src/main.cpp.o
 LRS: CMakeFiles/LRS.dir/src/Book.cpp.o
 LRS: CMakeFiles/LRS.dir/build.make
 LRS: CMakeFiles/LRS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LRS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LRS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LRS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/LRS.dir/clean:
 .PHONY : CMakeFiles/LRS.dir/clean
 
 CMakeFiles/LRS.dir/depend:
-	cd /home/ykahil/projects/LBM/Library-Management-System && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System/CMakeFiles/LRS.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ykahil/projects/Library-Management-System && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System/CMakeFiles/LRS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LRS.dir/depend
 

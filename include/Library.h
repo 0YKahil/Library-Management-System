@@ -76,16 +76,16 @@ class Library {
 
         // getters
         unordered_map<int, Book> getlibBooks();
-        unordered_map<int, User> getUsers();
+        unordered_map<string, User> getUsers();
         Book* getBookByID(int id);
-        User* getUserByID(int id);
+        User* getUserByID(string userID);
 
         // TODO: Implement these
         // !!!
         vector<User> getUserByName(string name);
 
     private:
-        unordered_map<int, User> userAccounts_;
+        unordered_map<string, User> userAccounts_;
         unordered_map<int, Book> libBooks_;
 
 };

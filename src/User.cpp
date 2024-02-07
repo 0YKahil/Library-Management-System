@@ -7,28 +7,20 @@ Author: Youssef Kahil
 
 #include "../include/User.h"
 
-// initialize userID with 0
-int User::currentUserID_ = 0;
 User::User() {
-    userID_ = currentUserID_++;
-    username_ = "USER_";
+    userID_ = "USER";
     password_ = "";
     books_ = {};
 }
 
 User::User(string username, string password) {
-    userID_ = currentUserID_++;
-    username_ = username;
+    userID_ = username;
     password_ = password;
     books_ = {};
 }
 
-const int User::getUserID() {
+const string User::getUserID() {
     return userID_;
-}
-
-const string User::getUserName() {
-    return username_;
 }
 
 const string User::getPassword() {

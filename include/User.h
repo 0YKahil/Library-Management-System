@@ -22,7 +22,7 @@ class User {
         User(string username, string password);
 
         // getters
-        const int getUserID();
+        const string getUserID();
         const string getUserName();
         const string getPassword();
         
@@ -49,13 +49,7 @@ class User {
 
 
     private:
-        /*
-        currentUserID will increment each time a user is constructed 
-        for the purpose of only creating users with unique IDs
-        */
-        static int currentUserID_; 
-        int userID_;
-        string username_;
+        string userID_;
         string password_;
         /* 
         Inventory of books is controlled using an unordered_map with the book id

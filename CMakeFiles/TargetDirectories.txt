@@ -1,4 +1,4 @@
-/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles/libTest.dir
-/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles/LRS.dir
-/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles/edit_cache.dir
-/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles/rebuild_cache.dir
+/home/ykahil/projects/Library-Management-System/CMakeFiles/libTest.dir
+/home/ykahil/projects/Library-Management-System/CMakeFiles/LRS.dir
+/home/ykahil/projects/Library-Management-System/CMakeFiles/edit_cache.dir
+/home/ykahil/projects/Library-Management-System/CMakeFiles/rebuild_cache.dir

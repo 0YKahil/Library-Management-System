@@ -1,6 +1,0 @@
-# ninja log v5
-0	216	1706991100312122541	CMakeFiles/libTest.dir/src/Book.cpp.o	6f423269fcebd56c
-1	222	1706991100312122541	CMakeFiles/LRS.dir/src/Book.cpp.o	b983af6e42f34f06
-0	467	1706991100562122528	CMakeFiles/LRS.dir/src/main.cpp.o	2664bd56cc420a8d
-0	481	1706991100572122528	CMakeFiles/libTest.dir/src/User.cpp.o	7ddf52ac08c337c2
-0	2	0	clean	a31eedcededa8236

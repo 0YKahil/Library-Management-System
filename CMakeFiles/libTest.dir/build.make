@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ykahil/projects/LBM/Library-Management-System
+CMAKE_SOURCE_DIR = /home/ykahil/projects/Library-Management-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ykahil/projects/LBM/Library-Management-System
+CMAKE_BINARY_DIR = /home/ykahil/projects/Library-Management-System
 
 # Include any dependencies generated for this target.
 include CMakeFiles/libTest.dir/depend.make
@@ -72,58 +72,58 @@ include CMakeFiles/libTest.dir/flags.make
 CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o: CMakeFiles/libTest.dir/flags.make
 CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o: tests/LibraryTest.cpp
 CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o: CMakeFiles/libTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o -MF CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o.d -o CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/tests/LibraryTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o -MF CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o.d -o CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o -c /home/ykahil/projects/Library-Management-System/tests/LibraryTest.cpp
 
 CMakeFiles/libTest.dir/tests/LibraryTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libTest.dir/tests/LibraryTest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/LBM/Library-Management-System/tests/LibraryTest.cpp > CMakeFiles/libTest.dir/tests/LibraryTest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Management-System/tests/LibraryTest.cpp > CMakeFiles/libTest.dir/tests/LibraryTest.cpp.i
 
 CMakeFiles/libTest.dir/tests/LibraryTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libTest.dir/tests/LibraryTest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/LBM/Library-Management-System/tests/LibraryTest.cpp -o CMakeFiles/libTest.dir/tests/LibraryTest.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Management-System/tests/LibraryTest.cpp -o CMakeFiles/libTest.dir/tests/LibraryTest.cpp.s
 
 CMakeFiles/libTest.dir/src/Library.cpp.o: CMakeFiles/libTest.dir/flags.make
 CMakeFiles/libTest.dir/src/Library.cpp.o: src/Library.cpp
 CMakeFiles/libTest.dir/src/Library.cpp.o: CMakeFiles/libTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libTest.dir/src/Library.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/src/Library.cpp.o -MF CMakeFiles/libTest.dir/src/Library.cpp.o.d -o CMakeFiles/libTest.dir/src/Library.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/Library.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libTest.dir/src/Library.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/src/Library.cpp.o -MF CMakeFiles/libTest.dir/src/Library.cpp.o.d -o CMakeFiles/libTest.dir/src/Library.cpp.o -c /home/ykahil/projects/Library-Management-System/src/Library.cpp
 
 CMakeFiles/libTest.dir/src/Library.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libTest.dir/src/Library.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/LBM/Library-Management-System/src/Library.cpp > CMakeFiles/libTest.dir/src/Library.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Management-System/src/Library.cpp > CMakeFiles/libTest.dir/src/Library.cpp.i
 
 CMakeFiles/libTest.dir/src/Library.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libTest.dir/src/Library.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/LBM/Library-Management-System/src/Library.cpp -o CMakeFiles/libTest.dir/src/Library.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Management-System/src/Library.cpp -o CMakeFiles/libTest.dir/src/Library.cpp.s
 
 CMakeFiles/libTest.dir/src/Book.cpp.o: CMakeFiles/libTest.dir/flags.make
 CMakeFiles/libTest.dir/src/Book.cpp.o: src/Book.cpp
 CMakeFiles/libTest.dir/src/Book.cpp.o: CMakeFiles/libTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libTest.dir/src/Book.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/src/Book.cpp.o -MF CMakeFiles/libTest.dir/src/Book.cpp.o.d -o CMakeFiles/libTest.dir/src/Book.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libTest.dir/src/Book.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/src/Book.cpp.o -MF CMakeFiles/libTest.dir/src/Book.cpp.o.d -o CMakeFiles/libTest.dir/src/Book.cpp.o -c /home/ykahil/projects/Library-Management-System/src/Book.cpp
 
 CMakeFiles/libTest.dir/src/Book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libTest.dir/src/Book.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp > CMakeFiles/libTest.dir/src/Book.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Management-System/src/Book.cpp > CMakeFiles/libTest.dir/src/Book.cpp.i
 
 CMakeFiles/libTest.dir/src/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libTest.dir/src/Book.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp -o CMakeFiles/libTest.dir/src/Book.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Management-System/src/Book.cpp -o CMakeFiles/libTest.dir/src/Book.cpp.s
 
 CMakeFiles/libTest.dir/src/User.cpp.o: CMakeFiles/libTest.dir/flags.make
 CMakeFiles/libTest.dir/src/User.cpp.o: src/User.cpp
 CMakeFiles/libTest.dir/src/User.cpp.o: CMakeFiles/libTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libTest.dir/src/User.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/src/User.cpp.o -MF CMakeFiles/libTest.dir/src/User.cpp.o.d -o CMakeFiles/libTest.dir/src/User.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libTest.dir/src/User.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/libTest.dir/src/User.cpp.o -MF CMakeFiles/libTest.dir/src/User.cpp.o.d -o CMakeFiles/libTest.dir/src/User.cpp.o -c /home/ykahil/projects/Library-Management-System/src/User.cpp
 
 CMakeFiles/libTest.dir/src/User.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libTest.dir/src/User.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/LBM/Library-Management-System/src/User.cpp > CMakeFiles/libTest.dir/src/User.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ykahil/projects/Library-Management-System/src/User.cpp > CMakeFiles/libTest.dir/src/User.cpp.i
 
 CMakeFiles/libTest.dir/src/User.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libTest.dir/src/User.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/LBM/Library-Management-System/src/User.cpp -o CMakeFiles/libTest.dir/src/User.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ykahil/projects/Library-Management-System/src/User.cpp -o CMakeFiles/libTest.dir/src/User.cpp.s
 
 # Object files for target libTest
 libTest_OBJECTS = \
@@ -141,7 +141,7 @@ libTest: CMakeFiles/libTest.dir/src/Book.cpp.o
 libTest: CMakeFiles/libTest.dir/src/User.cpp.o
 libTest: CMakeFiles/libTest.dir/build.make
 libTest: CMakeFiles/libTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable libTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ykahil/projects/Library-Management-System/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable libTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/libTest.dir/clean:
 .PHONY : CMakeFiles/libTest.dir/clean
 
 CMakeFiles/libTest.dir/depend:
-	cd /home/ykahil/projects/LBM/Library-Management-System && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System /home/ykahil/projects/LBM/Library-Management-System/CMakeFiles/libTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ykahil/projects/Library-Management-System && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System /home/ykahil/projects/Library-Management-System/CMakeFiles/libTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libTest.dir/depend
 

@@ -22,3 +22,7 @@
 LRS
 lrsTest
 libTest
+CMakeFiles
+cmake_install.cmake 
+CMakeCache.txt
+Makefile

@@ -97,7 +97,7 @@ unordered_map<int, Book> Library::getlibBooks() {
     return this->libBooks_;
 }
 
-unordered_map<int, User> Library::getUsers() {
+unordered_map<string, User> Library::getUsers() {
     return this->userAccounts_;
 }
 
@@ -105,13 +105,8 @@ Book* Library::getBookByID(int id) {
     return &libBooks_[id];
 }
 
-User* Library::getUserByID(int id) {
-    return &userAccounts_[id];
-}
-
-vector<User> Library::getUserByName(string name) {
-   // TODO
-   // !!!
+User* Library::getUserByID(string userID) {
+    return &userAccounts_[userID];
 }
 
 
