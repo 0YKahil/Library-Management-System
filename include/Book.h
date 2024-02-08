@@ -30,7 +30,7 @@ class Book {
         string getBookName();
         string getBookAuthor();
         Genre getBookGenre();
-        string getNameAndAuthor();
+        string getDetails();
         
         // setters
         void setBorrowed();

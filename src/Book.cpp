@@ -46,7 +46,7 @@ int Book::getBookID() {
     return this->bookID_;
 }
 
-string Book::getNameAndAuthor() {
+string Book::getDetails() {
     return to_string(bookID_) + " | " + name_ + " | " + author_;
 }
 

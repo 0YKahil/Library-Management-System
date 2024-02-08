@@ -19,6 +19,10 @@ User::User(string username, string password) {
     books_ = {};
 }
 
+const string User::getUserName() {
+    return userID_;
+}
+
 const string User::getUserID() {
     return userID_;
 }
@@ -34,7 +38,7 @@ unordered_map<int, Book> User::getBooks() {
 vector<string> User::getNamesAndAuthors() {
     vector<string> names = {};
     for(auto it = books_.begin(); it != books_.end(); ++it) {
-        names.push_back(it->second.getNameAndAuthor());
+        names.push_back(it->second.getDetails());
     }
     return names;
 }
