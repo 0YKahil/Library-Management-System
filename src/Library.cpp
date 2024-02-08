@@ -15,6 +15,7 @@ string to_upper(string &in) {
   return in;
 }
 
+
 Library::Library() {
     userAccounts_ = {};
     libBooks_ = {};
@@ -35,16 +36,22 @@ void Library::removeUser(User user) {
 }
 
 void Library::removeBook(Book book) {
-    if (libBooks_.find(book.getBookID()) != libBooks_.end()) {
-        libBooks_.erase(book.getBookID());
+    libBooks_.erase(book.getBookID());
+    vector<string>s* books = &bookList_;
+    for (int i = 0; i < books->size(); i++) {
+        if ((*books)[i] == book.getDetails()) {
+            // bookList_.erase();
+            break;
+        }
     }
-
 }
 
 vector<string> Library::viewAllBooks() {
     return bookList_;
 }
 
+// TODO: FIX THIS
+// !!!
 vector<string> Library::viewAvailableBooks() {
     vector<string> books = {};
     for (int i = 0; i < libBooks_.size(); i++) {

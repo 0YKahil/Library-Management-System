@@ -42,7 +42,7 @@ TEST_CASE("Test addBook/addUser and removeBook/removeUser") {
     REQUIRE((*users).size() == 0);   
 }
 
-TEST_CASE("Test Multiple adding and id indexing in map ") {
+TEST_CASE("Test Multiple adding and id indexing in map") {
     l.addBook(b1);
     l.addBook(b2);
     l.addBook(b3);
@@ -72,5 +72,26 @@ TEST_CASE("Test Multiple adding and id indexing in map ") {
     REQUIRE((*users).size() == 0);   
 }
 
-// TODO: ADD TESTS FOR VIEW BOOKS METHODS
-// !!!
+TEST_CASE("Test view book methods") {
+    lib = l.getlibBooks();
+    users = l.getUsers();
+
+    REQUIRE(lib->size() == 0);
+
+    l.addBook(b1);
+    l.addBook(b2);
+    l.addBook(b3);
+
+    REQUIRE(l.viewAllBooks().size() == 3);
+    REQUIRE(l.viewAllBooks()[0] == "1 | book1 | author1");
+    cout << "reached 87" << endl;
+    l.removeBook(b2);
+    cout << "reached 88" << endl;
+    REQUIRE(l.viewAllBooks().size() == 2);
+    cout << "reached 89" << endl;
+    for (int i = 0; i < l.viewAllBooks().size(); i++) {
+        cout << l.viewAllBooks()[i] << "< here" << endl;
+    }
+    REQUIRE(l.viewAllBooks()[1] == "2 | book2 | author2");
+
+}
