@@ -36,14 +36,15 @@ void Library::removeUser(User user) {
 }
 
 void Library::removeBook(Book book) {
-    libBooks_.erase(book.getBookID());
-    vector<string>s* books = &bookList_;
+    int index;
+    vector<string>* books = &bookList_;
     for (int i = 0; i < books->size(); i++) {
         if ((*books)[i] == book.getDetails()) {
-            // bookList_.erase();
-            break;
+            index = i;
+            books->erase(books->begin() + index);
         }
     }
+    libBooks_.erase(book.getBookID());
 }
 
 vector<string> Library::viewAllBooks() {

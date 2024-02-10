@@ -85,13 +85,19 @@ TEST_CASE("Test view book methods") {
     REQUIRE(l.viewAllBooks().size() == 3);
     REQUIRE(l.viewAllBooks()[0] == "1 | book1 | author1");
     cout << "reached 87" << endl;
+    for (int i = 0; i < l.viewAllBooks().size(); i++) {
+        cout << l.viewAllBooks()[i] << "< here" << endl;
+        cout << (*lib)[i+1].getBookName() << "< here" << endl;
+    }
     l.removeBook(b2);
     cout << "reached 88" << endl;
     REQUIRE(l.viewAllBooks().size() == 2);
     cout << "reached 89" << endl;
     for (int i = 0; i < l.viewAllBooks().size(); i++) {
         cout << l.viewAllBooks()[i] << "< here" << endl;
+        cout << (*lib)[i+1].getBookName() << "< here" << endl;
     }
+    REQUIRE(lib->size() == 2);
     REQUIRE(l.viewAllBooks()[1] == "2 | book2 | author2");
 
 }
