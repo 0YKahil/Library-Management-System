@@ -66,7 +66,7 @@ class Library {
         /*
         * EFFECTS: returns all the books with the given name in the format ID | NAME| AUTHOR
         */
-        vector<string> viewBookByName(string name);
+        vector<string> getBookByName(string name);
 
         /*
         * EFFECTS: returns all the books with the given author in the format ID | NAME| AUTHOR

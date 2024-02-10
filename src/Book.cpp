@@ -51,15 +51,11 @@ string Book::getDetails() {
 }
 
 void Book::setBorrowed() {
-    if (borrowed_ != true){
-        borrowed_ = true;
-    }   
+    this->borrowed_ = true;   
 }
 
 void Book::setAvailable() {
-    if (borrowed_ != false){
-        borrowed_ = false;
-    }   
+    this->borrowed_ = false;  
 }
 
 void Book::setBookName(string name) {

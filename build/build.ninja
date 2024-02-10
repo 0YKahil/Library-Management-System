@@ -90,44 +90,6 @@ build libTest: CXX_EXECUTABLE_LINKER__libTest_Debug CMakeFiles/libTest.dir/tests
   TARGET_FILE = libTest
   TARGET_PDB = libTest.dbg
 
-# =============================================================================
-# Object build statements for EXECUTABLE target LRS
-
-
-#############################################
-# Order-only phony target for LRS
-
-build cmake_object_order_depends_target_LRS: phony || CMakeFiles/LRS.dir
-
-build CMakeFiles/LRS.dir/src/main.cpp.o: CXX_COMPILER__LRS_Debug /home/ykahil/projects/LBM/Library-Management-System/src/main.cpp || cmake_object_order_depends_target_LRS
-  DEP_FILE = CMakeFiles/LRS.dir/src/main.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/LRS.dir
-  OBJECT_FILE_DIR = CMakeFiles/LRS.dir/src
-
-build CMakeFiles/LRS.dir/src/Book.cpp.o: CXX_COMPILER__LRS_Debug /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp || cmake_object_order_depends_target_LRS
-  DEP_FILE = CMakeFiles/LRS.dir/src/Book.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/LRS.dir
-  OBJECT_FILE_DIR = CMakeFiles/LRS.dir/src
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target LRS
-
-
-#############################################
-# Link the executable LRS
-
-build LRS: CXX_EXECUTABLE_LINKER__LRS_Debug CMakeFiles/LRS.dir/src/main.cpp.o CMakeFiles/LRS.dir/src/Book.cpp.o
-  FLAGS = -g
-  LINK_FLAGS = -rdynamic
-  OBJECT_DIR = CMakeFiles/LRS.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = LRS
-  TARGET_PDB = LRS.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -162,7 +124,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/ykahil/projects/LBM/Library-Management-System/build
 
-build all: phony libTest LRS
+build all: phony libTest
 
 # =============================================================================
 # Unknown Build Time Dependencies.

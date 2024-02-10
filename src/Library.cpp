@@ -5,9 +5,10 @@ implementation of Library
 @author: Ykahil
 */
 #include "../include/Library.h"
-
+#include <iostream>
+using namespace std;
 /*
- * Helper function to convert strings to uppercase 
+ * convert string to uppercase 
 */
 string to_upper(string &in) {
   for (int i = 0; i < in.length(); i++)
@@ -15,7 +16,16 @@ string to_upper(string &in) {
   return in;
 }
 
-
+/*
+* Checks if s2 has atleast the same letters repeated the same times as s1 and returns true if it does;
+* false otherwise
+*/
+bool containsLetters(string s1, string s2) {
+    // this function will be used to broaden the search for books by name in case the name is not exact when searched
+    unordered_map<char, int> chars = {};
+    // TODO
+    // !!!
+}
 Library::Library() {
     userAccounts_ = {};
     libBooks_ = {};
@@ -36,26 +46,23 @@ void Library::removeUser(User user) {
 }
 
 void Library::removeBook(Book book) {
-    int index;
-    vector<string>* books = &bookList_;
-    for (int i = 0; i < books->size(); i++) {
-        if ((*books)[i] == book.getDetails()) {
-            index = i;
-            books->erase(books->begin() + index);
+    for (int i = 0; i < bookList_.size(); i++) {
+        if (bookList_[i] == book.getDetails()) {
+            bookList_.erase(bookList_.begin() + i);
+            break;
         }
     }
     libBooks_.erase(book.getBookID());
 }
 
 vector<string> Library::viewAllBooks() {
-    return bookList_;
+    return this->bookList_;
 }
 
-// TODO: FIX THIS
-// !!!
+
 vector<string> Library::viewAvailableBooks() {
     vector<string> books = {};
-    for (int i = 0; i < libBooks_.size(); i++) {
+    for (int i = 1; i <= libBooks_.size(); i++) {
         if (!libBooks_[i].getBorrowed()) {
             books.push_back(libBooks_[i].getDetails());
         }
@@ -65,7 +72,7 @@ vector<string> Library::viewAvailableBooks() {
 
 vector<string> Library::viewFilteredBooks(Genre genre) {
     vector<string> books = {};
-    for (int i = 0; i < libBooks_.size(); i++) {
+    for (int i = 1; i <= libBooks_.size(); i++) {
         if (libBooks_[i].getBookGenre() == genre) {
             books.push_back(libBooks_[i].getDetails());
         }
@@ -75,7 +82,7 @@ vector<string> Library::viewFilteredBooks(Genre genre) {
 
 vector<string> Library::viewAvailableFilteredBooks(Genre genre) {
     vector<string> books = {};
-    for (int i = 0; i < libBooks_.size(); i++) {
+    for (int i = 1; i <= libBooks_.size(); i++) {
         if (libBooks_[i].getBookGenre() == genre && !libBooks_[i].getBorrowed()) {
             books.push_back(libBooks_[i].getDetails());
         }
@@ -83,10 +90,10 @@ vector<string> Library::viewAvailableFilteredBooks(Genre genre) {
     return books;
 }
 
-vector<string> Library::viewBookByName(string name) {
+vector<string> Library::getBookByName(string name) {
     vector<string> books = {};
     string book_name = "";
-    for (int i = 0; i < libBooks_.size(); i++) {
+    for (int i = 1; i <= libBooks_.size(); i++) {
         book_name = libBooks_[i].getBookName();
         if (to_upper(book_name) == to_upper(name)) {
             books.push_back(libBooks_[i].getDetails());
@@ -98,7 +105,7 @@ vector<string> Library::viewBookByName(string name) {
 vector<string> Library::viewBookByAuthor(string author) {
     vector<string> books = {};
     string author_name = "";
-    for (int i = 0; i < libBooks_.size(); i++) {
+    for (int i = 1; i <= libBooks_.size(); i++) {
         author_name = libBooks_[i].getBookAuthor();
         if (to_upper(author_name) == to_upper(author)) {
             books.push_back(libBooks_[i].getDetails());

@@ -11,6 +11,8 @@ set(headers
 set(sources 
     "./src/main.cpp" 
     "./src/Book.cpp"
+    "./src/User.cpp"
+    "./src/Library.cpp"
 )
 
 set(tests
@@ -38,10 +40,10 @@ set(librarytests
 
 )
 
-# add_executable(bookTest ${booktests}) 
+#add_executable(bookTest ${booktests}) 
 # add_executable(userTest ${usertests}) 
 add_executable(libTest ${librarytests}) 
-add_executable(LRS ${headers} ${sources})
+#add_executable(main ${headers} ${sources})
 
 
 

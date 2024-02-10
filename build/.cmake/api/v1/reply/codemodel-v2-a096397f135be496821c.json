@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "library-management-system",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,15 +38,8 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "LRS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LRS-Debug-6ab7517cb43f9c255cd2.json",
-					"name" : "LRS",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "libTest::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-libTest-Debug-8cb22ef0937b46ac0931.json",
+					"jsonFile" : "target-libTest-Debug-6ab7a8aa1a30be47fdda.json",
 					"name" : "libTest",
 					"projectIndex" : 0
 				}
