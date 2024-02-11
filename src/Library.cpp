@@ -7,25 +7,9 @@ implementation of Library
 #include "../include/Library.h"
 #include <iostream>
 using namespace std;
-/*
- * convert string to uppercase 
-*/
-string to_upper(string &in) {
-  for (int i = 0; i < in.length(); i++)
-    in[i] = in[i] - 'a' + 'A';
-  return in;
-}
 
-/*
-* Checks if s2 has atleast the same letters repeated the same times as s1 and returns true if it does;
-* false otherwise
-*/
-bool containsLetters(string s1, string s2) {
-    // this function will be used to broaden the search for books by name in case the name is not exact when searched
-    unordered_map<char, int> chars = {};
-    // TODO
-    // !!!
-}
+#include "helpers.cpp"
+
 Library::Library() {
     userAccounts_ = {};
     libBooks_ = {};

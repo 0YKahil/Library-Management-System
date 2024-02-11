@@ -1,6 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include "../include/Library.h"
+#include "../src/helpers.cpp"
 
 using namespace std;
 

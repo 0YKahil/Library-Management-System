@@ -876,8 +876,11 @@ CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o: tests/LibraryTest.cpp \
   /usr/include/c++/11/iostream \
   include/Library.h \
   include/User.h \
-  include/Book.h
+  include/Book.h \
+  src/helpers.cpp
 
+
+src/helpers.cpp:
 
 /usr/include/c++/11/bits/regex_executor.h:
 
