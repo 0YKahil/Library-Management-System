@@ -8,36 +8,36 @@ Author: Youssef Kahil
 #include "../include/User.h"
 
 User::User() {
-    userID_ = "USER";
-    password_ = "";
-    books_ = {};
+    _userID = "USER";
+    _password = "";
+    _books = {};
 }
 
 User::User(string username, string password) {
-    userID_ = username;
-    password_ = password;
-    books_ = {};
+    _userID = username;
+    _password = password;
+    _books = {};
 }
 
 const string User::getUserName() {
-    return userID_;
+    return _userID;
 }
 
 const string User::getUserID() {
-    return userID_;
+    return _userID;
 }
 
 const string User::getPassword() {
-    return password_;
+    return _password;
 }
 
 unordered_map<int, Book> User::getBooks() {
-    return books_;
+    return _books;
 }
 
 vector<string> User::getNamesAndAuthors() {
     vector<string> names = {};
-    for(auto it = books_.begin(); it != books_.end(); ++it) {
+    for(auto it = _books.begin(); it != _books.end(); ++it) {
         names.push_back(it->second.getDetails());
     }
     return names;
@@ -45,14 +45,14 @@ vector<string> User::getNamesAndAuthors() {
 
 void User::addBook(Book book) {
     if (!book.getBorrowed()) {
-        books_.insert({book.getBookID(), book});
+        _books.insert({book.getBookID(), book});
         book.setBorrowed();
     }
     
 }
 
 void User::removeBook(Book book) {
-    books_.erase({book.getBookID()});
+    _books.erase({book.getBookID()});
 }
 
 

@@ -40,8 +40,8 @@ set(librarytests
 
 )
 
-#add_executable(bookTest ${booktests}) 
-# add_executable(userTest ${usertests}) 
+add_executable(bookTest ${booktests}) 
+add_executable(userTest ${usertests}) 
 add_executable(libTest ${librarytests}) 
 #add_executable(main ${headers} ${sources})
 

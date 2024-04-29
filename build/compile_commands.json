@@ -1,6 +1,31 @@
 [
 {
   "directory": "/home/ykahil/projects/LBM/Library-Management-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/bookTest.dir/tests/BookTest.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/tests/BookTest.cpp",
+  "file": "/home/ykahil/projects/LBM/Library-Management-System/tests/BookTest.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/LBM/Library-Management-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/bookTest.dir/src/Book.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp",
+  "file": "/home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/LBM/Library-Management-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/userTest.dir/src/Book.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp",
+  "file": "/home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/LBM/Library-Management-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/userTest.dir/tests/UserTest.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/tests/UserTest.cpp",
+  "file": "/home/ykahil/projects/LBM/Library-Management-System/tests/UserTest.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/LBM/Library-Management-System/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/userTest.dir/src/User.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/src/User.cpp",
+  "file": "/home/ykahil/projects/LBM/Library-Management-System/src/User.cpp"
+},
+{
+  "directory": "/home/ykahil/projects/LBM/Library-Management-System/build",
   "command": "/usr/bin/g++ -g -o CMakeFiles/libTest.dir/tests/LibraryTest.cpp.o -c /home/ykahil/projects/LBM/Library-Management-System/tests/LibraryTest.cpp",
   "file": "/home/ykahil/projects/LBM/Library-Management-System/tests/LibraryTest.cpp"
 },

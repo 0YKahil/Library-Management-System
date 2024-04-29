@@ -2,6 +2,7 @@
 @Filename: User.h
 @author: Ykahil
 */
+#pragma once
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -49,13 +50,13 @@ class User {
 
 
     private:
-        string userID_;
-        string password_;
+        string _userID;
+        string _password;
         /* 
         Inventory of books is controlled using an unordered_map with the book id
         as the key to speed up the retrieval of a book in large book inventories, 
         as well as not allowing 2 books with the same id
         */
-        unordered_map<int, Book> books_;
+        unordered_map<int, Book> _books;
 
 };

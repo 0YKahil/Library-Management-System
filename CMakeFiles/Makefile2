@@ -63,6 +63,8 @@ CMAKE_BINARY_DIR = /home/ykahil/projects/LBM/Library-Management-System
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/bookTest.dir/all
+all: CMakeFiles/userTest.dir/all
 all: CMakeFiles/libTest.dir/all
 .PHONY : all
 
@@ -71,8 +73,62 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/bookTest.dir/clean
+clean: CMakeFiles/userTest.dir/clean
 clean: CMakeFiles/libTest.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bookTest.dir
+
+# All Build rule for target.
+CMakeFiles/bookTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bookTest.dir/build.make CMakeFiles/bookTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bookTest.dir/build.make CMakeFiles/bookTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=1,2,3 "Built target bookTest"
+.PHONY : CMakeFiles/bookTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bookTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/LBM/Library-Management-System/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bookTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/LBM/Library-Management-System/CMakeFiles 0
+.PHONY : CMakeFiles/bookTest.dir/rule
+
+# Convenience name for target.
+bookTest: CMakeFiles/bookTest.dir/rule
+.PHONY : bookTest
+
+# clean rule for target.
+CMakeFiles/bookTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bookTest.dir/build.make CMakeFiles/bookTest.dir/clean
+.PHONY : CMakeFiles/bookTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/userTest.dir
+
+# All Build rule for target.
+CMakeFiles/userTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=9,10,11,12 "Built target userTest"
+.PHONY : CMakeFiles/userTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/userTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/LBM/Library-Management-System/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/userTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ykahil/projects/LBM/Library-Management-System/CMakeFiles 0
+.PHONY : CMakeFiles/userTest.dir/rule
+
+# Convenience name for target.
+userTest: CMakeFiles/userTest.dir/rule
+.PHONY : userTest
+
+# clean rule for target.
+CMakeFiles/userTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userTest.dir/build.make CMakeFiles/userTest.dir/clean
+.PHONY : CMakeFiles/userTest.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/libTest.dir
@@ -81,7 +137,7 @@ clean: CMakeFiles/libTest.dir/clean
 CMakeFiles/libTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libTest.dir/build.make CMakeFiles/libTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libTest.dir/build.make CMakeFiles/libTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=1,2,3,4,5 "Built target libTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ykahil/projects/LBM/Library-Management-System/CMakeFiles --progress-num=4,5,6,7,8 "Built target libTest"
 .PHONY : CMakeFiles/libTest.dir/all
 
 # Build rule for subdir invocation for target.

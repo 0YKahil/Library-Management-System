@@ -2,6 +2,7 @@
 @Filename: Library.h
 @author: Ykahil
 */
+#pragma once
 #include "../include/User.h"
 #include <vector>
 
@@ -93,8 +94,8 @@ class Library {
         vector<User> getUserByName(string name);
 
     private:
-        unordered_map<string, User> userAccounts_;
-        unordered_map<int, Book> libBooks_;
+        unordered_map<string, User> _users;
+        unordered_map<int, Book> _books;
         /*
         * Book list is generated at the initialization of the library and is a visual representation of the books 
         * in the form "ID | BOOKNAME | AUTHOR". This is to provide a way to view all the books without having to generate
@@ -102,5 +103,5 @@ class Library {
         * instead by having a vector that only changes when a book is donated to the library, it will provide a faster way to view
         * all the books with their ids
         */ 
-        vector<string> bookList_; 
+        vector<string> _bookList; 
 };

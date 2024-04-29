@@ -15,7 +15,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -30,7 +32,9 @@
 					"name" : "library-management-system",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -38,9 +42,23 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "bookTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bookTest-Debug-48bfe8d3c67ebddfbb03.json",
+					"name" : "bookTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "libTest::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-libTest-Debug-6ab7a8aa1a30be47fdda.json",
 					"name" : "libTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "userTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-userTest-Debug-833e5b42f703110385b0.json",
+					"name" : "userTest",
 					"projectIndex" : 0
 				}
 			]

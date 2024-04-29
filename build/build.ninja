@@ -41,6 +41,88 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/ykahil/projects/LBM/Library-Management-System/build/
 # =============================================================================
+# Object build statements for EXECUTABLE target bookTest
+
+
+#############################################
+# Order-only phony target for bookTest
+
+build cmake_object_order_depends_target_bookTest: phony || CMakeFiles/bookTest.dir
+
+build CMakeFiles/bookTest.dir/tests/BookTest.cpp.o: CXX_COMPILER__bookTest_Debug /home/ykahil/projects/LBM/Library-Management-System/tests/BookTest.cpp || cmake_object_order_depends_target_bookTest
+  DEP_FILE = CMakeFiles/bookTest.dir/tests/BookTest.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/bookTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/bookTest.dir/tests
+
+build CMakeFiles/bookTest.dir/src/Book.cpp.o: CXX_COMPILER__bookTest_Debug /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp || cmake_object_order_depends_target_bookTest
+  DEP_FILE = CMakeFiles/bookTest.dir/src/Book.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/bookTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/bookTest.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bookTest
+
+
+#############################################
+# Link the executable bookTest
+
+build bookTest: CXX_EXECUTABLE_LINKER__bookTest_Debug CMakeFiles/bookTest.dir/tests/BookTest.cpp.o CMakeFiles/bookTest.dir/src/Book.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = CMakeFiles/bookTest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bookTest
+  TARGET_PDB = bookTest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target userTest
+
+
+#############################################
+# Order-only phony target for userTest
+
+build cmake_object_order_depends_target_userTest: phony || CMakeFiles/userTest.dir
+
+build CMakeFiles/userTest.dir/src/Book.cpp.o: CXX_COMPILER__userTest_Debug /home/ykahil/projects/LBM/Library-Management-System/src/Book.cpp || cmake_object_order_depends_target_userTest
+  DEP_FILE = CMakeFiles/userTest.dir/src/Book.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/userTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/userTest.dir/src
+
+build CMakeFiles/userTest.dir/tests/UserTest.cpp.o: CXX_COMPILER__userTest_Debug /home/ykahil/projects/LBM/Library-Management-System/tests/UserTest.cpp || cmake_object_order_depends_target_userTest
+  DEP_FILE = CMakeFiles/userTest.dir/tests/UserTest.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/userTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/userTest.dir/tests
+
+build CMakeFiles/userTest.dir/src/User.cpp.o: CXX_COMPILER__userTest_Debug /home/ykahil/projects/LBM/Library-Management-System/src/User.cpp || cmake_object_order_depends_target_userTest
+  DEP_FILE = CMakeFiles/userTest.dir/src/User.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/userTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/userTest.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target userTest
+
+
+#############################################
+# Link the executable userTest
+
+build userTest: CXX_EXECUTABLE_LINKER__userTest_Debug CMakeFiles/userTest.dir/src/Book.cpp.o CMakeFiles/userTest.dir/tests/UserTest.cpp.o CMakeFiles/userTest.dir/src/User.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = CMakeFiles/userTest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = userTest
+  TARGET_PDB = userTest.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target libTest
 
 
@@ -124,7 +206,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/ykahil/projects/LBM/Library-Management-System/build
 
-build all: phony libTest
+build all: phony bookTest userTest libTest
 
 # =============================================================================
 # Unknown Build Time Dependencies.

@@ -9,64 +9,64 @@ implementation of Book
 #include <string>
 
 // initialize BookID with 0
-int Book::currentBookID_ = 0;
+int Book::_currentBookID = 0;
 
 Book::Book(string name, string author, Genre genre) {
-    bookID_ = ++currentBookID_;
-    name_ = name;
-    author_ = author;
-    genre_ = genre;
-    borrowed_ = false;
+    _bookID = ++_currentBookID;
+    _name = name;
+    _author = author;
+    _genre = genre;
+    _borrowed = false;
 }
 
 Book::Book() {
-    bookID_ = ++currentBookID_;
-    name_ = "BOOK_";
-    author_ = "";
-    genre_ = OTHER;
+    _bookID = ++_currentBookID;
+    _name = "BOOK_";
+    _author = "";
+    _genre = OTHER;
 }
 
 string Book::getBookName(){
-    return this->name_;
+    return this->_name;
 }
 
 string Book::getBookAuthor(){
-    return this->author_;
+    return this->_author;
 }
 
 Genre Book::getBookGenre(){
-    return this->genre_;
+    return this->_genre;
 }
 
 bool Book::getBorrowed() {
-    return this->borrowed_;
+    return this->_borrowed;
 }
 
 int Book::getBookID() {
-    return this->bookID_;
+    return this->_bookID;
 }
 
 string Book::getDetails() {
-    return to_string(bookID_) + " | " + name_ + " | " + author_;
+    return to_string(_bookID) + " | " + _name + " | " + _author;
 }
 
 void Book::setBorrowed() {
-    this->borrowed_ = true;   
+    this->_borrowed = true;   
 }
 
 void Book::setAvailable() {
-    this->borrowed_ = false;  
+    this->_borrowed = false;  
 }
 
 void Book::setBookName(string name) {
-    name_ = name;
+    _name = name;
 }
 
 void Book::setBookAuthor(string author) {
-    author_ = author;
+    _author = author;
 }
 
 void Book::setBookGenre(Genre genre) {
-    genre_ = genre;
+    _genre = genre;
 }
 

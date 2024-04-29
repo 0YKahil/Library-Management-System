@@ -21,6 +21,8 @@
 ### my files
 LRS
 lrsTest
+userTest
+bookTest
 libTest
 CMakeFiles
 cmake_install.cmake 
