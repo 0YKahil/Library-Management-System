@@ -24,6 +24,6 @@
   
 To be added:
  - Wishlist
- - Book reccomendation algorithm
+ - Book recommendation algorithm
  - Review system
  - SQL database and SQL server integration
