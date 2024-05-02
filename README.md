@@ -16,9 +16,9 @@
 - GUI version here: https://github.com/0YKahil/Olibrary
 - Features include:
    - Login System with Admin or User accounts and their respective privileges connecting them to the database
+   - Viewing Books
    - Borrowing Books
    - Viewing Account
-   - Viewing Library
    - Filtering Books by genre and availability
    - Saving the state of the library using JSON parsing
   
