@@ -11,10 +11,10 @@ using namespace std;
 class Library {
 
     public:
-        /*
-        * Constructs a library with an empty collection of user accounts and empty library of books
-        */
-        Library();
+        static Library& getInstance() {
+            static Library instance;
+            return instance;
+        }
 
         /*
         * MODIFIES: this
@@ -94,6 +94,14 @@ class Library {
         vector<User> getUserByName(string name);
 
     private:
+        /*
+        * Constructs a library with an empty collection of user accounts and empty library of books
+        */
+        Library();
+
+        /* Prevent Copying*/
+        Library(const Library&);
+
         unordered_map<string, User> _users;
         unordered_map<int, Book> _books;
         /*
