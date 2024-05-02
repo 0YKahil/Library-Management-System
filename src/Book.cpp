@@ -27,7 +27,7 @@ static const string genreToString(const Genre genre) {
     case MYSTERY: return "MYSTERY";
     case ROMANCE: return "ROMANCE";
     case OTHER: return "OTHER";
-    default: return "UNKOWN";
+    default: return "UNKNOWN";
     }
 }
 
