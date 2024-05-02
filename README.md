@@ -1,6 +1,6 @@
-# Library System
+# Library System (Olibrary)
 
-## UI version
+## Source Code Version
 
 **Description**:
 - The application will act as a library's system which can keep track of books from a 
