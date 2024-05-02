@@ -3,7 +3,7 @@
 #include "../include/Library.h"
 using namespace std;
 
-Library l = Library();
+Library& l = Library::getInstance();
 unordered_map<int, Book>* lib;
 unordered_map<string, User>* users;
 
