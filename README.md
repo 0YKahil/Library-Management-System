@@ -13,6 +13,7 @@
 
 
 - This version is The source version of the OLibrary project and any code changes will be reflected here first
+- GUI version here: https://github.com/0YKahil/Olibrary
 - Features include:
    - Login System with Admin or User accounts and their respective privileges connecting them to the database
    - Borrowing Books
